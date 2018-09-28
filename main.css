@@ -1,10 +1,16 @@
 body {
-    background: rgb(183, 218, 183);
+    background: rgb(190, 174, 153);
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 25% auto 10%;
     grid-gap: 5px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#homeLogo {
+    max-width: 60%;
+    height: auto;
+    padding: 0 15px;
 }
 
 a {
@@ -19,7 +25,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 48px;
     grid-gap: 3px;
-    background: slategray;
+    background: rgb(165, 117, 85);
 }
 
 main {
@@ -37,8 +43,9 @@ aside {
 footer {
     grid-row: 3;
     grid-column: 1 / span 2;
-    background: black;
+    background:rgb(61, 56, 49);
     color: white;
+    text-align: center;
 }
 
 footer p {
@@ -60,8 +67,8 @@ nav {
 header h1 {
     grid-row: 1;
     grid-column: 2 / span 3;
-    align-self: start;
-    margin: 10px 0 25px 0;
+    align-self: center;
+    margin: 10px 0 0 0;
     font-size: 42px;
     font-weight: bolder;
 }
@@ -86,11 +93,12 @@ nav ul {
 }
 
 nav ul li {
-    background: black;
+    background: rgb(61, 56, 49);
     line-height: 30px;
 }
 nav ul li a {
     color: white;
+    font-style: italic;
 }
 
 #about {
@@ -127,4 +135,9 @@ div h2 {
 .about p { 
     padding-bottom: 15px;
     border-bottom: 1px gray solid;
+}
+
+aside h3 {
+    padding-left: 20px;
+    font-size: 22px;
 }
